@@ -20,5 +20,5 @@ A file manager application that allows users to browse, manage and organize file
 ### Screenshots 
 
 
-![App Screenshot]()
+![App Screenshot](https://github.com/BakerKoussa/FileMangerApp/blob/master/SS.jpg)
 
