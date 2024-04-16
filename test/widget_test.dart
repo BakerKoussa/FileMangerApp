@@ -16,9 +16,9 @@ void main() {
   group('FilesController', () {
     test('calculateSize calculates size for documents', () async {
       final entities = [
-        File('/storage/emulated/0/Documents/test.pdf'), // Adjust size as needed
+        File('/storage/emulated/0/Documents/test.pdf'),
         File(
-            '/storage/emulated/0/Videos/video.mp4'), // Keep video file for other tests
+            '/storage/emulated/0/Videos/video.mp4'),
       ];
 
       final controller = FilesController();
@@ -52,7 +52,7 @@ void main() {
       test(
           'calculateSize updates documentSize, videoSize, imageSize, and soundSize',
           () async {
-        // Create a list of mock FileSystemEntity objects
+
         final entities = [
           File('test.pdf')..writeAsStringSync(' ' * 1000000), // 1 MB
           File('video.mp4')..writeAsStringSync(' ' * 2000000), // 2 MB
@@ -60,13 +60,10 @@ void main() {
           File('sound.mp3')..writeAsStringSync(' ' * 4000000), // 4 MB
         ];
 
-        // Create an instance of FilesController
         final controller = FilesController();
 
-        // Call the function
         controller.calculateSize(entities);
 
-        // Verify updates
         expect(controller.documentSize, 1.0);
         expect(controller.videoSize, 2.0);
         expect(controller.imageSize, 3.0);
