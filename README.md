@@ -15,11 +15,10 @@ A file manager application that allows users to browse, manage and organize file
  - Customizable file and folder view options
  - Ability to view file properties and metadata
 
-### Wireframe
 
 
 ### Screenshots 
 
 
-![App Screenshot]()
+![App Screenshot](https://github.com/BakerKoussa/FileMangerApp/blob/master/SS.jpg)
 
